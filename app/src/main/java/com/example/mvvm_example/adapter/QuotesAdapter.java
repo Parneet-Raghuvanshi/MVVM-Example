@@ -33,7 +33,8 @@ public class QuotesAdapter extends RecyclerView.Adapter<QuotesAdapter.MyViewHold
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.quoteText.setText(quotes.get(position).getQuoteText());
-        holder.quoteAuthor.setText(quotes.get(position).getQuoteAuthor());
+        String author = "~ "+quotes.get(position).getQuoteAuthor();
+        holder.quoteAuthor.setText(author);
     }
 
     @Override
