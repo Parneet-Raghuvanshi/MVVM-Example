@@ -52,6 +52,8 @@
         android:layout_height="wrap_content">
 
         <ProgressBar
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/black"
             android:layout_margin="6dp"
             android:layout_width="32dp"
             android:layout_height="32dp"/>
